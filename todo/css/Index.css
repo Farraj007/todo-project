@@ -4,10 +4,13 @@ header {
   height: 200px;
   width: 100%;
   overflow: visible;
+  display: flex;
+  overflow: visible;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #Logo {
-  
   margin-left: 0px;
   margin-top: 0px;
   width: 200px;
@@ -15,17 +18,17 @@ header {
 }
 
 ul {
-  position: fixed;
-  top: 50px;
-  left: 200px;
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #a89d13;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  
 }
-
-#search{margin-left: 50%;}
 
 li {
   margin-left: 50px;
@@ -43,9 +46,35 @@ li a {
 }
 
 li a:hover {
-  background-color: #998E08;
+  background-color: #998e08;
 }
-#logo2 {height: 100px}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#Name {
+  color: #362c63;
+  display: flex;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  background-color: #362c63;
+  width: 100%;
+}
+
+#Table {
+  align-self: center;
+
+}
+
+#logo2 {
+  display: flex;
+  height: 100px;
+}
 footer {
   margin-top: 20%;
   display: flex;
@@ -53,8 +82,23 @@ footer {
   position: 100%;
   background-color: #a89d13;
   justify-content: space-between;
+  align-content: center;
+
 }
-#right { display: flex;
 
-
+#copyRights {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  
+}
+#right {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+td,
+th {
+  padding: 15px;
 }
