@@ -1,0 +1,134 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 200px 1fr 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  grid-row: 1;
+  grid-column: 1 / 5;
+  background-color: #a89d13;
+  overflow: visible;
+  align-items: center;
+  
+}
+#logo {
+  display: flex;
+}
+#Nav-bar {
+  display: flex;
+  align-items: center;
+  
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+li {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline;
+    float: left; }
+li a {
+ 
+  display: inline;
+  float: left;
+  color: #362c63;
+  padding: 14px 16px;
+  
+}
+li a:hover {
+    background-color: #a89d13;
+  }
+main {
+   grid-row: 2;
+   grid-column: 1 / 5;
+   justify-content: space-between;
+   display: grid;
+   margin: 20px 0px;
+}
+.rec {   
+}
+h1 {
+    color: #362c63;
+    display: flex;
+    margin: 15px 0px 0px 0px;
+    
+}
+#ID {
+    display: flex;
+  
+}
+h2{
+    color: #a89d13;
+}
+#me {
+    max-height: 300px;
+    border-radius: 50%
+}
+#me:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+#Para {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+p {
+    display: flex;
+    flex-direction: column;
+}
+#MSG {
+    background-color: #362c63;
+    grid-column: 2 / 5 ;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0px 50px;
+}
+#Form {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    padding: 30px;
+    color: #a89d13;
+}
+input[type=submit] {
+    background-color: #a89d13;
+    color: white;
+    padding: 30;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+footer {
+    grid-row: 3;
+    grid-column: 1 / 5;
+    display: flex;
+    background-color: #a89d13;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#CopyRights {
+    padding: 0 50px;
+    
+}
+
+#endl {
+    height: 100px;
+    width: 100px;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
