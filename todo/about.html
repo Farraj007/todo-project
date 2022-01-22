@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/about.css">
 </head>
-<body>
+<body class="grid-container">
     <header>
         <div id="Logo">
             <img src="imgs/Logo1.png" alt="Logo">
          </div>
-         <div id="Nav bar">
+         <div id="Nav-bar">
              <ul>
                  <li><a href="index.html">Home</a></li>
                  <li><a href="about.html">About</a></li>
@@ -22,11 +23,12 @@
     </header>
 
     <main>
+        <div class="rec">
         <h1>CEO & Owner </h1>
         <section id="ID">
-            <div>
+            <div >
                 <h2>Barham Jeries Farraj</h2>
-                <img src="imgs/aec5903e-64f2-4648-8a66-bd9cd36ef7be.jpg" alt="Mine">
+                <img id="me" src="imgs/aec5903e-64f2-4648-8a66-bd9cd36ef7be.jpg" alt="Mine">
     
             </div>
             <div id="Para">
@@ -34,6 +36,7 @@
                     Also the design thing is nice but idk what to fill it up with cause it should have an idea a purpose but this is just for the task for now. i think this is enough it looks good bye</p>
                     
             </div>
+        </div>   
         </section>
         <section id="MSG">
 
@@ -43,9 +46,17 @@
                 <input type="text" placeholder="Enter You Email Adress">
                 <form action="Text">Full Name</form>
                 <input type="text" placeholder="Enter Your Full Name">
+                <form action="number">Your Age</form>
+                <input type="number" placeholder="Type your age">
+                <form action="selection" >Sex</form>
+                <select id="Gender" name="Gender">
+                    <option value="Gender">Select Your Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
                 <form action="Text">Your Message</form>
                 <input type="text" placeholder="Write Your Message">
-                
+                <input type="submit" value="Submit">
 
             </div>
         
@@ -59,16 +70,17 @@
     </main>
 
     <footer>
+        <section>
         <div id="CopyRights">
             <p> @2021. Copy Rights Reserved</p>
          </div>
          <div id="Contact">
              <p>Contact us:Info@Todo.com</p>
              <p>Follow us on :</p>
-
          </div>
+        </section>
          <div>
-             <img src="imgs/Logo1.png" alt="Logo">
+             <img id="endl" src="imgs/Logo1.png" alt="Logo">
          </div>
     </footer>
 </body>
