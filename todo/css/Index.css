@@ -18,7 +18,7 @@ header {
 }
 
 ul {
-  
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -28,6 +28,17 @@ ul {
   justify-content: flex-end;
   align-items: baseline;
   
+}
+
+table #myCheck {
+  background-color: white;
+}
+table #myCheck:hover {
+  background-color: #45a049;
+}
+#Table , th , tr , td {
+
+  border: 10px #a89d13
 }
 
 li {
@@ -68,7 +79,6 @@ table {
 
 #Table {
   align-self: center;
-
 }
 
 #logo2 {
