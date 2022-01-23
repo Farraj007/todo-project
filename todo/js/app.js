@@ -1,6 +1,16 @@
 "use strict";
 
+
 alert("Welcome to ToDo Website ");
+
+alert("Are you Sure you want to Enter the website")
+let questions= ["Are you sure you want to enter the website?" , "Do you Love Coding?" , "Are you Ready ?"]
+let answersArray = [] 
+ for(let i=0; i<3 ; i++){
+   
+  answersArray[i]= prompt (questions[i])
+}
+console.log(answersArray)
 
 alert(" Please Follow the Instructions To Access the WebSite");
 console.log("x");
@@ -31,7 +41,7 @@ age=prompt("Please Enter Your Age")
 var gender=prompt("What is Your Gender","male or female")
 while (gender !="male" && gender!="female"){
     console.log("User gender is")
-    gender=prompt("Choose your gender","male of female")
+    gender=prompt("Choose your gender","male or female")
 }
 if (gender=="male"){
     alert("Welcome to ToDo Mr "+Name )}
