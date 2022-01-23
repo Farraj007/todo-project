@@ -3,12 +3,17 @@
 
 alert("Welcome to ToDo Website ");
 
-alert("Are you Sure you want to Enter the website")
-let questions= ["Are you sure you want to enter the website?" , "Do you Love Coding?" , "Are you Ready ?"]
+alert("Are you Sure you want to Enter the website", "Please Answer with yes or no from now-on")
+let questions= ["Are you sure you want to enter the website?" , "Do you Love Coding?" , "Are you Ready ?"] 
 let answersArray = [] 
  for(let i=0; i<3 ; i++){
    
-  answersArray[i]= prompt (questions[i])
+  answersArray[i]= prompt (questions[i]) 
+  if (answersArray[i] != "yes" || answersArray[i] != "no"){
+    console.log("InValid")
+    alert("InValid Entry")
+    answersArray[i]= prompt (questions[i])
+  }
 }
 console.log(answersArray)
 
